@@ -1,0 +1,17 @@
+name: aoc-2024
+targets:
+  - {os: linux, arch: amd64}
+modules:
+  - name: cbuild
+    config:
+      name: aoc24
+      source: src
+      include: [include]
+      compiler: gcc
+      main: src/main.c
+      cc: true
+
+  - name: output
+    config:
+      module: cbuild
+      outDir: bin
