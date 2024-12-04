@@ -85,6 +85,10 @@ int main(int argc, char **argv) {
     p1 = ex2_p1;
     p2 = ex2_p2;
     break;
+  case 3:
+    p1 = ex3_p1;
+    p2 = ex3_p2;
+    break;
   default:
     printf("no registered handler for %d\n", exNum);
     exit(1);

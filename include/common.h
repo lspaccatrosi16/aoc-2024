@@ -3,7 +3,8 @@
 
 #define STATUS_SUCCESS 0
 #define STATUS_ERROR 1
-#define MAX_LINE_LEN 1024
+#define STATUS_EOF 2
+#define MAX_LINE_LEN 65536
 #define MAX_LINES 1024
 #define HT_INITIAL_CAP 64
 #define VEC_INITIAL_CAP 64
