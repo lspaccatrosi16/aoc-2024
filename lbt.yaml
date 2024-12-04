@@ -10,6 +10,7 @@ modules:
       compiler: gcc
       main: src/main.c
       cc: true
+      flags: [-g]
 
   - name: output
     config:
