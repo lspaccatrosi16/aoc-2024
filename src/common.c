@@ -166,7 +166,6 @@ int create_int_vec(struct int_vec **ptr) {
 }
 
 static int int_vec_realloc(struct int_vec *ptr) {
-  printf("realloc vec\n");
   if ((long)ptr->cap * 2 > INT_MAX) {
     printf("int_vec exceeded max size\n");
     return STATUS_ERROR;
